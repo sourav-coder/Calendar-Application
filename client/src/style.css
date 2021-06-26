@@ -1,0 +1,250 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Roboto:wght@300&family=Ubuntu:wght@300&display=swap");
+
+body {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  background-color: #fffcff;
+}
+
+.day {
+  width: 100px;
+  padding: 10px;
+  height: 100px;
+  cursor: pointer;
+  box-sizing: border-box;
+  background-color: white;
+  margin: 5px;
+  box-shadow: 0px 0px 3px #cbd4c2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.day:hover {
+  background-color: #e8faed;
+}
+
+#header {
+  padding: 10px;
+  color: #0d6efd;
+  font-size: 26px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  justify-content: space-between;
+}
+#header #monthDisplay {
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: "Monserrat", sans-serif;
+}
+#header #backButton,
+#nextButton {
+  background-color: #0d6efd;
+  padding: 10px 40px;
+  border-radius: 26px;
+  border: none;
+  outline: none;
+  color: #fff;
+  margin-right: 10px;
+  font-weight: 600;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+#container {
+  width: 770px;
+}
+#weekdays {
+  width: 100%;
+  display: flex;
+  color: #247ba0;
+  text-align: center;
+  justify-content: space-around;
+}
+#weekdays div {
+  width: 100px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Monserrat", sans-serif;
+}
+
+#emptyBox {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+#calender {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+#calender .emptyBox {
+  width: 70px;
+  height: 70px;
+  margin-top: 6px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+#calender .monthBox {
+  width: 70px;
+  height: 70px;
+  color: #fff;
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  font-family: "Monserrat", sans-serif;
+  border-radius: 6px;
+  margin-top: 6px;
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+#calender .activate {
+  background: #e0ece4;
+  box-shadow: 0px 0px 9px 1px #0d6efd;
+  color: #0d6efd;
+  font-weight: 700;
+}
+#calender .monthBox:hover {
+  background: #fff;
+  box-shadow: 0px 0px 9px 1px #0d6efd;
+  color: #0d6efd;
+}
+
+/* .day + #currentDay { */
+/* background-color:#e8f4fa; */
+/* } */
+/* .event { */
+/* font-size: 10px; */
+/* padding: 3px; */
+/* background-color: #58bae4; */
+/* color: white; */
+/* border-radius: 5px; */
+/* max-height: 55px; */
+/* overflow: hidden; */
+/* } */
+/* .padding { */
+/* cursor: default !important; */
+/* background-color: #FFFCFF !important; */
+/* box-shadow: none !important; */
+/* } */
+
+/* ---------------------- modal ------------------------ */
+
+.modal form .form-label {
+  font-family: "Monserrat", sans-serif;
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.modal form .time {
+  display: flex;
+  margin-top: 20px;
+  margin-bottom: 16px;
+  justify-content: space-evenly;
+}
+
+.modal form .time .form-control {
+  width: 50%;
+}
+
+.modal .navbar-nav {
+  margin: auto;
+  font-family: "Monserrat", sans-serif;
+  color: #0d6efd;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.modal .firstRow {
+  font-family: "Monserrat", sans-serif;
+}
+.modal .firstRow h3 {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.modal .firstRow ul {
+  list-style-type: none;
+  height: 300px;
+  overflow-x: auto;
+}
+
+.modal .firstRow li {
+ 
+  text-align: left;
+  font-size: 14px;
+  background: #eee;
+  border-radius: 3px;
+  padding: 9px 16px;
+  margin-bottom: 12px;
+  border-left: 8px solid #0d6efd;
+  box-shadow: 0 2px 2px 0 rgb(0 0 0 / 14%), 0 3px 1px -2px rgb(0 0 0 / 12%), 0 1px 5px 0 rgb(0 0 0 / 20%);
+}
+
+.modal .firstRow ul li i{
+  margin: 12px 12px 0 12px;
+  color: #0d6efd;
+  font-size: 22px;
+  cursor: pointer;
+}
+.modal .firstRow ul li .yearDate{
+  display: flex;
+  justify-content: flex-end;
+  font-size: 12px;
+}
+ 
+ 
+.firstRow ul{
+  padding: 0;
+}
+
+.firstRow .searchBox{
+  display: flex;
+    padding: 2% 4%;
+    margin-bottom: 12px;
+}
+
+
+ 
+ 
+ 
+ 
+
+
+.modal .secondRow{
+  text-align: center;
+}
+
+.secondRow h3 {
+  font-size: 20px;
+  font-family: "Monserrat", sans-serif;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+.secondRow form {
+  padding: 0% 8%;
+}
+
+
+
+
+
+form .btn{
+  padding: 8px 29px;
+  border-radius: 24px;
+}
